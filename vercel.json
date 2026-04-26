@@ -1,15 +1,11 @@
 {
-  "version": 2,
-  "builds": [
-  {
-     "src": "index.tsx"
-     "use": "@vercel/node"
-  }
-  ],
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
+  "framework": "vite",
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "index.tsx"
+      "src": "/(.*)"
+      "dest": "/index.tsx"
     }
   ]
 }
